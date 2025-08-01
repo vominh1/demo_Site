@@ -1,151 +1,169 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Võ Minh Đầy</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <title>Võ Minh Đầy - Full-Stack Developer</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
 </head>
-
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#home">Võ Minh Đầy</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+ 
+  <div class="animated-bg"></div>
 
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Võ Minh Đầy</a>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Trang chủ</a></li>
+        <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+        <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+        <li><a href="#projects" class="nav-link">Dự án</a></li>
+        <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+      </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="hero-content">
-            <h1>Xin chào! Tôi là<br><span style="color: var(--accent-color);">Võ Minh Đầy</span></h1>
-            <p class="lead">Full-Stack Developer</p>
-            <p style="font-size: 1.1rem; margin-bottom: 2rem;">
-              Tôi là một Full-Stack Developer tốt nghiệp ngành Kỹ thuật Phần mềm với nền tảng vững chắc về .NET
-              Framework và các công nghệ web hiện .
-            </p>
-            <div>
-              <a href="#projects" class="btn-custom btn-primary-custom">
-                <i class="fas fa-eye me-2"></i>Xem dự án
-              </a>
-              <a href="#contact" class="btn-custom btn-outline-custom">
-                <i class="fas fa-envelope me-2"></i>Liên hệ
-              </a>
-              <a href="https://github.com/vominh1" target="_blank" class="btn-custom btn-outline-custom">
-                <i class="fab fa-github me-2"></i>Xem tất cả dự án trên GitHub
-              </a>
-            </div>
-          </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Xin chào! Tôi là <br><span class="highlight">Võ Minh Đầy</span></h1>
+        <p class="subtitle">Full-Stack Developer • Software Engineer</p>
+        <p class="description">
+          Tôi là một Full-Stack Developer tốt nghiệp ngành Kỹ thuật Phần mềm với nền tảng vững chắc về .NET Framework và các công nghệ web hiện đại. Đam mê tạo ra những sản phẩm công nghệ chất lượng cao.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-eye"></i> Xem dự án tiêu biểu
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Liên hệ
+          </a>
+          <a href="https://github.com/vominh1" target="_blank" class="btn btn-outline">
+            <i class="fab fa-github"></i> Xem tất cả dự án trên GitHub
+          </a>
         </div>
-        <div class="col-lg-6 text-center">
-          <img style="max-width: 50%; max-height: 30%;" src="/images/minhday.JPEG" alt="Võ Minh Đầy Profile"
-            class="hero-avatar img-fluid">
+      </div>
+      <div class="hero-image">
+        <div class="profile-card">
+          <img src="/images/minhday.JPEG" alt="Võ Minh Đầy" class="profile-img">
+          <h3 class="profile-name">Võ Minh Đầy</h3>
+          <p class="profile-title">Full-Stack Developer</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="section about">
+  <section id="about" class="about">
     <div class="container">
-      <h2 class="section-title fade-in">Giới thiệu về tôi</h2>
-      <div class="row">
-        <div class="col-lg-6 fade-in">
-          <div class="about-content">
-            <p>
-              Tôi là Võ Minh Đầy, một Full-Stack Developer tốt nghiệp ngành Kỹ thuật Phần mềm tại Đại học Nguyễn Tất
-              Thành với GPA 3.3/4.0.
-              Tôi có kinh nghiệm thực tế trong việc phát triển các ứng dụng web sử dụng .NET Framework, React.js và các
-              công nghệ hiện đại.
-            </p>
-            <p>
-              Gần đây tôi đã hoàn thành thực tập Backend Developer tại Công ty TNHH Dịch vụ - Thương mại Phương Quân,
-              nơi tôi đã phân tích yêu cầu kinh doanh, thiết kế cơ sở dữ liệu và phát triển các API backend hiệu quả.
-            </p>
-
-
-            <!-- Thêm mục tiêu nghề nghiệp -->
-            <p>
-              <strong>Mục tiêu nghề nghiệp:</strong><br>
-              Tôi mong muốn trở thành một lập trình viên chuyên nghiệp, không ngừng học hỏi công nghệ mới, phát triển
-              các sản phẩm phần mềm chất lượng và đóng góp giá trị cho doanh nghiệp. Tôi hướng tới vị trí Full-Stack
-              Developer hoặc Technical Leader trong tương lai gần.
-            </p>
-            <div class="mt-4">
-              <h5><i class="fas fa-graduation-cap text-primary me-2"></i>Học vấn</h5>
-              <p class="mb-2"><strong>Kỹ sư phần mềm</strong></p>
-              <p class="text-muted">Đại học Nguyễn Tất Thành (2021-2025) - GPA: 3.3/4.0</p>
-              <p class="text-success mb-0"><strong>Xếp loại tốt nghiệp: Giỏi</strong></p>
-            </div>
-            <div class="mt-3">
-              <h5><i class="fas fa-briefcase text-primary me-2"></i>Kinh nghiệm</h5>
-              <p class="mb-2"><strong>Backend Developer Intern</strong></p>
-              <p class="text-muted">Công ty TNHH Dịch vụ - Thương mại Phương Quân (10/2024 - 01/2025)</p>
-            </div>
-          </div>
-
+      <div class="section-header fade-in">
+        <h2 class="section-title">Giới thiệu về tôi</h2>
+        <p class="section-subtitle">Đam mê công nghệ và không ngừng học hỏi để phát triển bản thân</p>
+      </div>
+      
+      <div class="about-content fade-in">
+        <div class="about-text">
+          <p>
+            Tôi là <span class="highlight-text">Võ Minh Đầy</span>, một Full-Stack Developer tốt nghiệp ngành Kỹ thuật Phần mềm tại <span class="highlight-text">Đại học Nguyễn Tất Thành</span> với GPA 3.3/4.0, xếp loại <span class="highlight-text">Giỏi</span>.
+          </p>
+          <p>
+            Tôi có kinh nghiệm thực tế trong việc phát triển các ứng dụng web sử dụng .NET Framework, React.js và các công nghệ hiện đại. Gần đây tôi đã hoàn thành thực tập <span class="highlight-text">Backend Developer</span> tại Công ty TNHH Dịch vụ - Thương mại Phương Quân.
+          </p>
+          <p>
+            <strong>Mục tiêu nghề nghiệp:</strong><br>
+            Tôi mong muốn trở thành một lập trình viên chuyên nghiệp, không ngừng học hỏi công nghệ mới, phát triển các sản phẩm phần mềm chất lượng và đóng góp giá trị cho doanh nghiệp.
+          </p>
         </div>
-        <div class="col-lg-6">
-          <div class="row">
-            <div class="col-md-6 fade-in">
-              <div class="skill-item">
-                <div class="skill-icon">
-                  <i class="fab fa-js-square"></i>
-                </div>
-                <h5 class="skill-title">Frontend</h5>
-                <p>
-                  Thành thạo xây dựng giao diện web hiện đại, responsive với React.js, Razor, HTML, CSS, JavaScript và
-                  Bootstrap. Đã từng phát triển nhiều dự án thương mại điện tử và quản lý với trải nghiệm người dùng tối
-                  ưu.
-                </p>
-              </div>
+        <div class="about-stats">
+          <div class="stat-card fade-in">
+            <div class="stat-icon">
+              <i class="fas fa-graduation-cap"></i>
             </div>
-            <div class="col-md-6 fade-in">
-              <div class="skill-item">
-                <div class="skill-icon">
-                  <i class="fas fa-server"></i>
-                </div>
-                <h5 class="skill-title">Backend</h5>
-                <p>
-                  Có kinh nghiệm phát triển API, xử lý logic nghiệp vụ với ASP.NET MVC, C#, Entity Framework, Node.js,
-                  Express.js. Đã triển khai xác thực OAuth, phân quyền và tối ưu hiệu năng hệ thống.
-                </p>
-              </div>
+            <h3 class="stat-title">Học vấn</h3>
+            <p class="stat-description">Kỹ sư Phần mềm<br>ĐH Nguyễn Tất Thành<br>GPA: 3.3/4.0 - Giỏi</p>
+          </div>
+          <div class="stat-card fade-in">
+            <div class="stat-icon">
+              <i class="fas fa-briefcase"></i>
             </div>
-            <div class="col-md-6 fade-in">
-              <div class="skill-item">
-                <div class="skill-icon">
-                  <i class="fas fa-database"></i>
-                </div>
-                <h5 class="skill-title">Database</h5>
-                <p>
-                  Thiết kế, tối ưu và quản trị cơ sở dữ liệu với SQL Server, MySQL, MongoDB, Oracle. Thành thạo truy
-                  vấn, backup, restore và xây dựng các báo cáo dữ liệu.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6 fade-in">
-              <div class="skill-item">
-                <div class="skill-icon">
-                  <i class="fas fa-tools"></i>
-                </div>
-                <h5 class="skill-title">Tools & Others</h5>
-                <p>
-                  Sử dụng thành thạo Visual Studio, VS Code, Git, GitHub để quản lý mã nguồn và làm việc nhóm. Đã triển
-                  khai xác thực OAuth 2.0 cho các ứng dụng web.
-                </p>
-              </div>
-            </div>
+            <h3 class="stat-title">Kinh nghiệm</h3>
+            <p class="stat-description">Backend Developer Intern<br>Công ty Phương Quân<br>10/2024 - 01/2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title" style="color: white;">Kỹ năng chuyên môn</h2>
+        <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Những công nghệ và kỹ năng tôi thành thạo</p>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skill-category fade-in">
+          <h3 class="skill-category-title">
+            <i class="fab fa-js-square skill-category-icon"></i>
+            Frontend Development
+          </h3>
+          <div class="skill-list">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Razor</span>
+            <span class="skill-tag">jQuery</span>
+          </div>
+        </div>
+        
+        <div class="skill-category fade-in">
+          <h3 class="skill-category-title">
+            <i class="fas fa-server skill-category-icon"></i>
+            Backend Development
+          </h3>
+          <div class="skill-list">
+            <span class="skill-tag">ASP.NET MVC</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">Entity Framework</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">RESTful API</span>
+          </div>
+        </div>
+        
+        <div class="skill-category fade-in">
+          <h3 class="skill-category-title">
+            <i class="fas fa-database skill-category-icon"></i>
+            Database & Storage
+          </h3>
+          <div class="skill-list">
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Oracle</span>
+            <span class="skill-tag">Cloudinary</span>
+          </div>
+        </div>
+        
+        <div class="skill-category fade-in">
+          <h3 class="skill-category-title">
+            <i class="fas fa-tools skill-category-icon"></i>
+            Tools & Technologies
+          </h3>
+          <div class="skill-list">
+            <span class="skill-tag">Visual Studio</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">OAuth 2.0</span>
+            <span class="skill-tag">LINQ</span>
+            <span class="skill-tag">WinForms</span>
           </div>
         </div>
       </div>
@@ -153,311 +171,100 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="section">
+  <section id="projects" class="projects">
     <div class="container">
-      <h2 class="section-title fade-in">Dự án tiêu biểu của tôi</h2>
-      <div class="row">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Dự án tiêu biểu</h2>
+        <p class="section-subtitle">Những dự án tôi đã phát triển với đam mê và chuyên nghiệp</p>
+      </div>
+      
+      <div class="projects-grid">
         <!-- Project 1 -->
-        <div class="col-lg-6 fade-in">
-          <div class="project-card">
-
-            <div class="project-content">
-              <h4 class="project-title">Candy & Cake Online Shop Website</h4>
-              <video class="project-video" width="400" controls>
-                <source src="videos/demo_web_ASP_CSharp.mp4" type="video/mp4">
-                Trình duyệt của bạn không hỗ trợ video.
-              </video>
-              <p class="project-description">
-                Website thương mại điện tử hoàn chỉnh cho bán bánh kẹo với tính năng quản lý sản phẩm,
-                giỏ hàng, thanh toán và xác thực người dùng. Hỗ trợ đăng nhập qua Google & Facebook OAuth.
-              </p>
-              <div class="mb-3">
-                <span class="tech-tag">ASP.NET MVC</span>
-                <span class="tech-tag">C#</span>
-                <span class="tech-tag">Entity Framework</span>
-                <span class="tech-tag">SQL Server</span>
-                <span class="tech-tag">Bootstrap</span>
-                <span class="tech-tag">OAuth 2.0</span>
-              </div>
-              <!-- ...existing code... -->
-              <div class="d-flex gap-2 mb-3">
-                <a href="https://github.com/vominh1/ShopTechNoLoGy.git" target="_blank" class="btn btn-primary btn-sm">
-                  <i class="fab fa-github me-1"></i>GitHub
-                </a>
-                <!-- Nút xem chi tiết -->
-                <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal"
-                  data-bs-target="#project1Modal">
-                  <i class="fas fa-info-circle me-1"></i>Xem chi tiết
-                </button>
-              </div>
-              <!-- Modal chi tiết dự án -->
-              <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="project1ModalLabel">Chi tiết dự án: Candy & Cake Online Shop Website
-                      </h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
-                    </div>
-                    <div class="modal-body text-start">
-                      <ul>
-                        <li><strong>Mục tiêu:</strong> Phát triển một website thương mại điện tử bán bánh kẹo với hệ
-                          thống quản lý đầy đủ cho cả người dùng và quản trị viên.</li>
-
-                        <li><strong>Chức năng chính dành cho khách hàng:</strong>
-                          <ul>
-                            <li>Đăng ký, đăng nhập người dùng (hỗ trợ Google và Facebook OAuth 2.0).</li>
-                            <li>Xem danh sách sản phẩm theo loại, tìm kiếm và xem chi tiết từng sản phẩm.</li>
-                            <li>Thêm sản phẩm vào giỏ hàng, cập nhật số lượng, xóa sản phẩm.</li>
-                            <li>Đặt hàng, thanh toán và theo dõi trạng thái đơn hàng.</li>
-                            <li>Xem lại lịch sử mua hàng và trạng thái đơn hàng đã đặt.</li>
-                          </ul>
-                        </li>
-
-                        <li><strong>Chức năng quản trị viên:</strong>
-                          <ul>
-                            <li>Đăng nhập hệ thống quản trị bằng tài khoản admin.</li>
-                            <li>Thêm, sửa, xóa sản phẩm (hình ảnh, mô tả, giá, số lượng tồn kho...)</li>
-                            <li>Quản lý đơn hàng từ khách hàng, cập nhật trạng thái giao hàng.</li>
-                            <li>Thống kê doanh thu theo ngày, tháng và theo từng sản phẩm.</li>
-                            <li>Quản lý tài khoản khách hàng và nội dung bài viết quảng cáo.</li>
-                          </ul>
-                        </li>
-
-                        <li><strong>Kỹ thuật & công nghệ sử dụng:</strong>
-                          <ul>
-                            <li><strong>Frontend:</strong> Razor View, HTML, CSS, Bootstrap, jQuery.</li>
-                            <li><strong>Backend:</strong> ASP.NET MVC, C#, Entity Framework, LINQ.</li>
-                            <li><strong>Cơ sở dữ liệu:</strong> SQL Server – gồm các bảng: sản phẩm, loại sản phẩm, đơn
-                              hàng, chi tiết đơn hàng, khách hàng, tài khoản, v.v.</li>
-                            <li><strong>Xác thực:</strong> Google & Facebook OAuth 2.0.</li>
-                          </ul>
-                        </li>
-
-                        <li><strong>Vai trò cá nhân:</strong>
-                          <ul>
-                            <li>Phân tích yêu cầu hệ thống, thiết kế database và luồng xử lý logic nghiệp vụ.</li>
-                            <li>Xây dựng toàn bộ backend sử dụng ASP.NET MVC kết hợp Entity Framework.</li>
-                            <li>Triển khai giao diện người dùng thân thiện, tương thích mọi thiết bị (responsive).</li>
-                            <li>Tích hợp OAuth 2.0 cho đăng nhập bảo mật với Google & Facebook.</li>
-                            <li>Kiểm thử chức năng và xử lý lỗi, tối ưu hiệu suất truy vấn.</li>
-                          </ul>
-                        </li>
-
-                        <li><strong>Kết quả:</strong> Hoàn thiện một website đầy đủ chức năng, dễ sử dụng, tốc độ phản
-                          hồi tốt và có thể trình diễn thực tế cho nhà tuyển dụng hoặc khách hàng.</li>
-                      </ul>
-
-                    </div>
-                    <div class="modal-footer"> 
-                      <a href="https://github.com/vominh1/ShopTechNoLoGy.git" target="_blank"
-                          class="btn btn-primary btn-sm">
-                          <i class="fab fa-github me-1"></i> Xem GitHub
-                        </a>
-                      <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Đóng</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <video class="project-video" muted loop>
+              <source src="videos/demo_web_ASP_CSharp.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Candy & Cake Online Shop</h3>
+            <p class="project-description">
+              Website thương mại điện tử hoàn chỉnh cho bán bánh kẹo với tính năng quản lý sản phẩm, giỏ hàng, thanh toán và xác thực người dùng. Hỗ trợ đăng nhập qua Google & Facebook OAuth.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">ASP.NET MVC</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">Entity Framework</span>
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">Bootstrap</span>
+              <span class="tech-tag">OAuth 2.0</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vominh1/ShopTechNoLoGy.git" target="_blank" class="project-link link-github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="project-link link-demo" onclick="openModal('project1Modal')">
+                <i class="fas fa-info-circle"></i> Chi tiết
+              </a>
             </div>
           </div>
         </div>
 
         <!-- Project 2 -->
-        <div class="col-lg-6 fade-in">
-          <div class="project-card">
-
-            <div class="project-content">
-              <h4 class="project-title">Fashion Sales Website</h4>
-              <video class="project-video" width="400" controls>
-                <source src="videos/demo_web_ASP_CSharp.mp4" type="video/mp4">
-                Trình duyệt của bạn không hỗ trợ video.
-              </video>
-              <p class="project-description">
-                Website bán thời trang với dashboard quản trị, giỏ hàng người dùng và tính năng upload hình ảnh
-                qua Cloudinary. Được phát triển với MERN stack.
-              </p>
-              <div class="mb-3">
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">Express.js</span>
-                <span class="tech-tag">React.js</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">Cloudinary</span>
-              </div>
-              <div class="d-flex gap-2 mb-3">
-                <a href="https://github.com/vominh1/Ecommerce-app-master.git" target="_blank"
-                  class="btn btn-primary btn-sm">
-                  <i class="fab fa-github me-1"></i>GitHub
-                </a>
-                <!-- Nút xem chi tiết -->
-                <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal"
-                  data-bs-target="#project2Modal">
-                  <i class="fas fa-info-circle me-1"></i>Xem chi tiết
-                </button>
-
-                <!-- Modal chi tiết dự án: Fashion Sales Website -->
-                <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="project2ModalLabel">Chi tiết dự án: Fashion Sales Website</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
-                      </div>
-                      <div class="modal-body text-start">
-                        <ul>
-                          <li><strong>Mục tiêu:</strong> Xây dựng một nền tảng thương mại điện tử chuyên bán thời trang
-                            với giao diện hiện đại, trải nghiệm người dùng mượt mà và hệ thống quản trị hiệu quả.</li>
-
-                          <li><strong>Chức năng dành cho người dùng:</strong>
-                            <ul>
-                              <li>Đăng ký/đăng nhập tài khoản người dùng.</li>
-                              <li>Xem danh sách sản phẩm, bộ lọc theo loại, tìm kiếm tên sản phẩm.</li>
-                              <li>Thêm sản phẩm vào giỏ hàng, cập nhật số lượng, thanh toán đơn hàng.</li>
-                              <li>Xem lịch sử mua hàng và chi tiết đơn hàng.</li>
-                            </ul>
-                          </li>
-
-                          <li><strong>Chức năng dành cho quản trị viên:</strong>
-                            <ul>
-                              <li>Đăng nhập vào dashboard quản trị.</li>
-                              <li>Quản lý sản phẩm: thêm/sửa/xóa, cập nhật giá, mô tả, hình ảnh.</li>
-                              <li>Quản lý đơn hàng và theo dõi trạng thái thanh toán.</li>
-                              <li>Upload ảnh sản phẩm lên Cloudinary (API cloud lưu trữ ảnh).</li>
-                            </ul>
-                          </li>
-
-                          <li><strong>Công nghệ sử dụng:</strong>
-                            <ul>
-                              <li><strong>Frontend:</strong> React.js với React Router và Hooks.</li>
-                              <li><strong>Backend:</strong> Node.js & Express.js – xây dựng RESTful API.</li>
-                              <li><strong>Database:</strong> MongoDB với Mongoose ORM.</li>
-                              <li><strong>Cloudinary:</strong> để lưu trữ và quản lý hình ảnh sản phẩm.</li>
-                            </ul>
-                          </li>
-
-                          <li><strong>Vai trò cá nhân:</strong>
-                            <ul>
-                              <li>Phát triển toàn bộ phần frontend với React.js.</li>
-                              <li>Thiết kế API backend và tích hợp với MongoDB.</li>
-                              <li>Tích hợp hệ thống upload ảnh Cloudinary.</li>
-                              <li>Thiết kế trải nghiệm người dùng (UX) cho trang khách và admin.</li>
-                            </ul>
-                          </li>
-
-                          <li><strong>Kết quả:</strong> Website có giao diện hiện đại, hiệu suất tốt, dễ sử dụng, và có
-                            khả năng mở rộng dễ dàng cho các loại sản phẩm khác.</li>
-                        </ul>
-
-                      </div>
-                      <div class="modal-footer">
-                        <a href="https://github.com/vominh1/Ecommerce-app-master.git" target="_blank"
-                          class="btn btn-primary btn-sm">
-                          <i class="fab fa-github me-1"></i> Xem GitHub
-                        </a>
-                        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Đóng</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <video class="project-video" muted loop>
+              <source src="videos/demo_web_ASP_CSharp.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Fashion Sales Website</h3>
+            <p class="project-description">
+              Website bán thời trang với dashboard quản trị, giỏ hàng người dùng và tính năng upload hình ảnh qua Cloudinary. Được phát triển với MERN stack.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Cloudinary</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vominh1/Ecommerce-app-master.git" target="_blank" class="project-link link-github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="project-link link-demo" onclick="openModal('project2Modal')">
+                <i class="fas fa-info-circle"></i> Chi tiết
+              </a>
             </div>
           </div>
         </div>
 
         <!-- Project 3 -->
-        <div class="col-lg-6 fade-in">
-          <div class="project-card">
-
-            <div class="project-content">
-              <h4 class="project-title">Classroom Management System</h4>
-              <video class="project-video" width="400" controls>
-                <source src="videos/demo_winform.mp4" type="video/mp4">
-                Trình duyệt của bạn không hỗ trợ video.
-              </video>
-              <p class="project-description">
-                Hệ thống quản lý lớp học Windows Forms với tính năng quản lý học sinh, khóa học,
-                lập lịch đơn giản và xác thực dữ liệu đầu vào.
-              </p>
-              <div class="mb-3">
-                <span class="tech-tag">WinForms</span>
-                <span class="tech-tag">C#</span>
-                <span class="tech-tag">SQL Server</span>
-              </div>
-              <div class="d-flex gap-2 mb-3">
-                <a href="https://github.com/vominh1/DA_LapTrinhUngDung.git" target="_blank"
-                  class="btn btn-primary btn-sm">
-                  <i class="fab fa-github me-1"></i>GitHub
-                </a>
-                <!-- Nút xem chi tiết -->
-                <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal"
-                  data-bs-target="#project3Modal">
-                  <i class="fas fa-info-circle me-1"></i>Xem chi tiết
-                </button>
-
-                <!-- Modal chi tiết dự án: Classroom Management System -->
-                <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="project3ModalLabel">Chi tiết dự án: Classroom Management System</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
-                      </div>
-                      <div class="modal-body text-start">
-                        <ul>
-                          <li><strong>Mục tiêu:</strong> Xây dựng một phần mềm desktop giúp quản lý lớp học, học sinh và
-                            khóa học trong môi trường giáo dục truyền thống.</li>
-
-                          <li><strong>Chức năng chính:</strong>
-                            <ul>
-                              <li>Quản lý học sinh: thêm, sửa, xóa thông tin cá nhân.</li>
-                              <li>Quản lý lớp học: gán học sinh vào lớp, tạo lớp mới.</li>
-                              <li>Quản lý khóa học: thời gian, giáo viên giảng dạy, lịch học.</li>
-                              <li>Lập lịch học và kiểm tra trùng lặp.</li>
-                              <li>Tra cứu thông tin theo lớp, khóa, học sinh.</li>
-                            </ul>
-                          </li>
-
-                          <li><strong>Công nghệ sử dụng:</strong>
-                            <ul>
-                              <li><strong>Ngôn ngữ:</strong> C# với Windows Forms (WinForms).</li>
-                              <li><strong>Cơ sở dữ liệu:</strong> SQL Server – dùng để lưu trữ thông tin học sinh, lớp
-                                học, khóa học.</li>
-                              <li><strong>Kỹ thuật:</strong> ADO.NET để kết nối và thao tác dữ liệu.</li>
-                            </ul>
-                          </li>
-
-                          <li><strong>Vai trò cá nhân:</strong>
-                            <ul>
-                              <li>Thiết kế giao diện WinForms trực quan, dễ sử dụng.</li>
-                              <li>Xây dựng toàn bộ logic xử lý CRUD cho các chức năng.</li>
-                              <li>Tối ưu dữ liệu và xác thực thông tin đầu vào.</li>
-                              <li>Kiểm thử và khắc phục lỗi giao diện, logic nghiệp vụ.</li>
-                            </ul>
-                          </li>
-
-                          <li><strong>Kết quả:</strong> Ứng dụng chạy ổn định trên môi trường Windows, dễ triển khai cho
-                            các cơ sở giáo dục nhỏ. Tối ưu cho người dùng không chuyên công nghệ.</li>
-                        </ul>
-                      </div>
-                      <div class="modal-footer">
-                        <a href="https://github.com/vominh1/DA_LapTrinhUngDung.git" target="_blank"
-                          class="btn btn-primary btn-sm">
-                          <i class="fab fa-github me-1"></i> Xem GitHub
-                        </a>
-                        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Đóng</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <video class="project-video" muted loop>
+              <source src="videos/demo_winform.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Classroom Management System</h3>
+            <p class="project-description">
+              Hệ thống quản lý lớp học Windows Forms với tính năng quản lý học sinh, khóa học, lập lịch đơn giản và xác thực dữ liệu đầu vào.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">WinForms</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">ADO.NET</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vominh1/DA_LapTrinhUngDung.git" target="_blank" class="project-link link-github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="project-link link-demo" onclick="openModal('project3Modal')">
+                <i class="fas fa-info-circle"></i> Chi tiết
+              </a>
             </div>
           </div>
         </div>
@@ -466,96 +273,210 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section contact">
+  <section id="contact" class="contact">
     <div class="container">
-      <h2 class="section-title fade-in" style="color: white;">Liên hệ với tôi</h2>
-      <div class="row">
-        <div class="col-lg-4 fade-in">
-          <div class="contact-item">
-            <div class="contact-icon">
+      <div class="contact-content">
+        <div class="contact-text fade-in">
+          <h2>Liên hệ với tôi</h2>
+          <p>Tôi luôn sẵn sàng thảo luận về các cơ hội hợp tác mới và dự án thú vị. Hãy liên hệ với tôi!</p>
+          
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope contact-icon"></i>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>vominhday1@gmail.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-phone contact-icon"></i>
+              <div class="contact-details">
+                <h4>Điện thoại</h4>
+                <p>0363066401</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt contact-icon"></i>
+              <div class="contact-details">
+                <h4>Địa chỉ</h4>
+                <p>Quận 12, TP. Hồ Chí Minh</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://github.com/vominh1" target="_blank" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/vo-minh-day" target="_blank" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:vominhday1@gmail.com" class="social-link">
               <i class="fas fa-envelope"></i>
-            </div>
-            <h5 class="contact-title">Email</h5>
-            <p class="contact-info">vominhday1@gmail.com</p>
+            </a>
           </div>
         </div>
-        <div class="col-lg-4 fade-in">
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-phone"></i>
-            </div>
-            <h5 class="contact-title">Điện thoại</h5>
-            <p class="contact-info">0363066401</p>
-          </div>
-        </div>
-        <div class="col-lg-4 fade-in">
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <h5 class="contact-title">Địa chỉ</h5>
-            <p class="contact-info">Quận 12, TP. Hồ Chí Minh</p>
+        
+        <div class="contact-form fade-in">
+          <div class="profile-card">
+            <img src="/images/minhday.JPEG" alt="Võ Minh Đầy" class="profile-img">
+            <h3 class="profile-name">Sẵn sàng hợp tác</h3>
+            <p class="profile-title">Hãy cùng tạo ra những sản phẩm tuyệt vời!</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="social-links mb-3">
-        <a href="https://github.com/vominh1" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/vo-minh-day" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:vominhday1@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
-      <p>&copy; 2024 Võ Minh Đầy. All rights reserved.</p>
+      <p>&copy; 2024 Võ Minh Đầy. All rights reserved. Made with ❤️ and passion for technology.</p>
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
+  <!-- Modals -->
+  <!-- Project 1 Modal -->
+  <div id="project1Modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Chi tiết dự án: Candy & Cake Online Shop Website</h3>
+        <button class="close" onclick="closeModal('project1Modal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li><strong>Mục tiêu:</strong> Phát triển một website thương mại điện tử bán bánh kẹo với hệ thống quản lý đầy đủ cho cả người dùng và quản trị viên.</li>
+          <li><strong>Chức năng chính dành cho khách hàng:</strong>
+            <ul>
+              <li>Đăng ký, đăng nhập người dùng (hỗ trợ Google và Facebook OAuth 2.0)</li>
+              <li>Xem danh sách sản phẩm theo loại, tìm kiếm và xem chi tiết từng sản phẩm</li>
+              <li>Thêm sản phẩm vào giỏ hàng, cập nhật số lượng, xóa sản phẩm</li>
+              <li>Đặt hàng, thanh toán và theo dõi trạng thái đơn hàng</li>
+              <li>Xem lại lịch sử mua hàng và trạng thái đơn hàng đã đặt</li>
+            </ul>
+          </li>
+          <li><strong>Chức năng quản trị viên:</strong>
+            <ul>
+              <li>Đăng nhập hệ thống quản trị bằng tài khoản admin</li>
+              <li>Thêm, sửa, xóa sản phẩm (hình ảnh, mô tả, giá, số lượng tồn kho...)</li>
+              <li>Quản lý đơn hàng từ khách hàng, cập nhật trạng thái giao hàng</li>
+              <li>Thống kê doanh thu theo ngày, tháng và theo từng sản phẩm</li>
+              <li>Quản lý tài khoản khách hàng và nội dung bài viết quảng cáo</li>
+            </ul>
+          </li>
+          <li><strong>Kỹ thuật & công nghệ sử dụng:</strong>
+            <ul>
+              <li><strong>Frontend:</strong> Razor View, HTML, CSS, Bootstrap, jQuery</li>
+              <li><strong>Backend:</strong> ASP.NET MVC, C#, Entity Framework, LINQ</li>
+              <li><strong>Cơ sở dữ liệu:</strong> SQL Server – gồm các bảng: sản phẩm, loại sản phẩm, đơn hàng, chi tiết đơn hàng, khách hàng, tài khoản, v.v.</li>
+              <li><strong>Xác thực:</strong> Google & Facebook OAuth 2.0</li>
+            </ul>
+          </li>
+          <li><strong>Vai trò cá nhân:</strong>
+            <ul>
+              <li>Phân tích yêu cầu hệ thống, thiết kế database và luồng xử lý logic nghiệp vụ</li>
+              <li>Xây dựng toàn bộ backend sử dụng ASP.NET MVC kết hợp Entity Framework</li>
+              <li>Triển khai giao diện người dùng thân thiện, tương thích mọi thiết bị (responsive)</li>
+              <li>Tích hợp OAuth 2.0 cho đăng nhập bảo mật với Google & Facebook</li>
+              <li>Kiểm thử chức năng và xử lý lỗi, tối ưu hiệu suất truy vấn</li>
+            </ul>
+          </li>
+          <li><strong>Kết quả:</strong> Hoàn thiện một website đầy đủ chức năng, dễ sử dụng, tốc độ phản hồi tốt và có thể trình diễn thực tế cho nhà tuyển dụng hoặc khách hàng.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-    // Fade in animation on scroll
-    function fadeInOnScroll() {
-      const elements = document.querySelectorAll('.fade-in');
-      elements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top;
-        const elementVisible = 150;
-        if (elementTop < window.innerHeight - elementVisible) {
-          element.classList.add('visible');
-        }
-      });
-    }
+  <!-- Project 2 Modal -->
+  <div id="project2Modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Chi tiết dự án: Fashion Sales Website</h3>
+        <button class="close" onclick="closeModal('project2Modal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li><strong>Mục tiêu:</strong> Xây dựng một nền tảng thương mại điện tử chuyên bán thời trang với giao diện hiện đại, trải nghiệm người dùng mượt mà và hệ thống quản trị hiệu quả.</li>
+          <li><strong>Chức năng dành cho người dùng:</strong>
+            <ul>
+              <li>Đăng ký/đăng nhập tài khoản người dùng</li>
+              <li>Xem danh sách sản phẩm, bộ lọc theo loại, tìm kiếm tên sản phẩm</li>
+              <li>Thêm sản phẩm vào giỏ hàng, cập nhật số lượng, thanh toán đơn hàng</li>
+              <li>Xem lịch sử mua hàng và chi tiết đơn hàng</li>
+            </ul>
+          </li>
+          <li><strong>Chức năng dành cho quản trị viên:</strong>
+            <ul>
+              <li>Đăng nhập vào dashboard quản trị</li>
+              <li>Quản lý sản phẩm: thêm/sửa/xóa, cập nhật giá, mô tả, hình ảnh</li>
+              <li>Quản lý đơn hàng và theo dõi trạng thái thanh toán</li>
+              <li>Upload ảnh sản phẩm lên Cloudinary (API cloud lưu trữ ảnh)</li>
+            </ul>
+          </li>
+          <li><strong>Công nghệ sử dụng:</strong>
+            <ul>
+              <li><strong>Frontend:</strong> React.js với React Router và Hooks</li>
+              <li><strong>Backend:</strong> Node.js & Express.js – xây dựng RESTful API</li>
+              <li><strong>Database:</strong> MongoDB với Mongoose ORM</li>
+              <li><strong>Cloudinary:</strong> để lưu trữ và quản lý hình ảnh sản phẩm</li>
+            </ul>
+          </li>
+          <li><strong>Vai trò cá nhân:</strong>
+            <ul>
+              <li>Phát triển toàn bộ phần frontend với React.js</li>
+              <li>Thiết kế API backend và tích hợp với MongoDB</li>
+              <li>Tích hợp hệ thống upload ảnh Cloudinary</li>
+              <li>Thiết kế trải nghiệm người dùng (UX) cho trang khách và admin</li>
+            </ul>
+          </li>
+          <li><strong>Kết quả:</strong> Website có giao diện hiện đại, hiệu suất tốt, dễ sử dụng, và có khả năng mở rộng dễ dàng cho các loại sản phẩm khác.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-    window.addEventListener('scroll', fadeInOnScroll);
-    // Initial check
-    fadeInOnScroll();
+  <!-- Project 3 Modal -->
+  <div id="project3Modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Chi tiết dự án: Classroom Management System</h3>
+        <button class="close" onclick="closeModal('project3Modal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li><strong>Mục tiêu:</strong> Xây dựng một phần mềm desktop giúp quản lý lớp học, học sinh và khóa học trong môi trường giáo dục truyền thống.</li>
+          <li><strong>Chức năng chính:</strong>
+            <ul>
+              <li>Quản lý học sinh: thêm, sửa, xóa thông tin cá nhân</li>
+              <li>Quản lý lớp học: gán học sinh vào lớp, tạo lớp mới</li>
+              <li>Quản lý khóa học: thời gian, giáo viên giảng dạy, lịch học</li>
+              <li>Lập lịch học và kiểm tra trùng lặp</li>
+              <li>Tra cứu thông tin theo lớp, khóa, học sinh</li>
+            </ul>
+          </li>
+          <li><strong>Công nghệ sử dụng:</strong>
+            <ul>
+              <li><strong>Ngôn ngữ:</strong> C# với Windows Forms (WinForms)</li>
+              <li><strong>Cơ sở dữ liệu:</strong> SQL Server – dùng để lưu trữ thông tin học sinh, lớp học, khóa học</li>
+              <li><strong>Kỹ thuật:</strong> ADO.NET để kết nối và thao tác dữ liệu</li>
+            </ul>
+          </li>
+          <li><strong>Vai trò cá nhân:</strong>
+            <ul>
+              <li>Thiết kế giao diện WinForms trực quan, dễ sử dụng</li>
+              <li>Xây dựng toàn bộ logic xử lý CRUD cho các chức năng</li>
+              <li>Tối ưu dữ liệu và xác thực thông tin đầu vào</li>
+              <li>Kiểm thử và khắc phục lỗi giao diện, logic nghiệp vụ</li>
+            </ul>
+          </li>
+          <li><strong>Kết quả:</strong> Ứng dụng chạy ổn định trên môi trường Windows, dễ triển khai cho các cơ sở giáo dục nhỏ. Tối ưu cho người dùng không chuyên công nghệ.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-    // Navbar background on scroll
-    window.addEventListener('scroll', function () {
-      const navbar = document.querySelector('.navbar');
-      if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.boxShadow = '0 2px 8px rgba(0,0,0,0.06)';
-      } else {
-        navbar.style.background = 'transparent';
-        navbar.style.boxShadow = 'none';
-      }
-    });
-  </script>
+   <script src="script.js"></script>
 </body>
-
 </html>
